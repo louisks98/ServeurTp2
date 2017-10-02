@@ -4,12 +4,14 @@
 #include <stdlib.h>
 #include <iostream>
 #include <string>
+#include "Encryption_Type3.h"
 // link with Ws2_32.lib
 #pragma comment(lib, "Ws2_32.lib")
 
 using namespace std;
 
 int main() {
+	
 	WSADATA wsaData; SOCKADDR_IN sin; SOCKET ClientSocket, ListenSocket = INVALID_SOCKET;
 	char msg[512], recvbuf[512]; std::string mot;
 	sin.sin_addr.s_addr = inet_addr("172.17.116.112");
@@ -48,6 +50,8 @@ int main() {
 		memset(&msg, 0, sizeof(msg)); 
 		strncpy(msg, recvbuf, iResult);
 
+		DechiffrerTrois(5, msg);
+
 		if (!strcmp(msg, "exit"))
 		{
 			cout << "le client s'est déconecter" << endl;
@@ -63,9 +67,11 @@ int main() {
 		strcpy(msg, data.c_str());
 		if (data == "exit")
 		{
+			ChiffrerTrois(5, msg);
 			send(ClientSocket, (char*)&msg, strlen(msg), 0);
 			break;
 		}
+		ChiffrerTrois(5, msg);
 		send(ClientSocket, (char*)&msg, strlen(msg), 0);
 	} while (1);
 	// communication terminer

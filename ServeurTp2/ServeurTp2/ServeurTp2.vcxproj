@@ -144,6 +144,11 @@
   <ItemGroup>
     <ClInclude Include="Encryption_Type3.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Downloads\Encryption_Type3\Encryption_Type3.vcxproj">
+      <Project>{9e49c7b6-81c9-4bc0-9788-8298405f3208}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

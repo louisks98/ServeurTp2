@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ServeurTp2", "ServeurTp2\ServeurTp2.vcxproj", "{B6583583-38BE-493B-9CE0-18A33D6ACB77}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5E5AF157-3C2E-4C66-8D98-256EA12F862A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Encryption_Type3", "..\..\..\..\Downloads\Encryption_Type3\Encryption_Type3.vcxproj", "{9E49C7B6-81C9-4BC0-9788-8298405F3208}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +23,14 @@ Global
 		{B6583583-38BE-493B-9CE0-18A33D6ACB77}.Release|x64.Build.0 = Release|x64
 		{B6583583-38BE-493B-9CE0-18A33D6ACB77}.Release|x86.ActiveCfg = Release|Win32
 		{B6583583-38BE-493B-9CE0-18A33D6ACB77}.Release|x86.Build.0 = Release|Win32
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Debug|x64.ActiveCfg = Debug|x64
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Debug|x64.Build.0 = Debug|x64
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Debug|x86.ActiveCfg = Debug|Win32
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Debug|x86.Build.0 = Debug|Win32
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Release|x64.ActiveCfg = Release|x64
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Release|x64.Build.0 = Release|x64
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Release|x86.ActiveCfg = Release|Win32
+		{9E49C7B6-81C9-4BC0-9788-8298405F3208}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
